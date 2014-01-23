@@ -30,10 +30,9 @@ public class SearchPlantsActivity extends Activity {
   
     public void searchClicked(View v){
     	String strDescription = description.getText().toString();
-    	//call sum method
-    	int value = sum(1,2);
+    	
     	//pops up a box when search is clicked
-    	Toast.makeText(this, strDescription + value, Toast.LENGTH_LONG).show();
+    	Toast.makeText(this, strDescription, Toast.LENGTH_LONG).show();
     	
     }
     
