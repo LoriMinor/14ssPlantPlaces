@@ -1,11 +1,11 @@
 package com.plantplaces.plantplacesmobile14ss;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class GPSAPlantActivity extends Activity {
 	
@@ -15,7 +15,7 @@ public class GPSAPlantActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_plants);
+        setContentView(R.layout.activity_gps_plants);
         
         description = (EditText) findViewById(R.id.edtDescription);
     }
@@ -29,16 +29,12 @@ public class GPSAPlantActivity extends Activity {
     }
   
     public void searchClicked(View v){
-    	String strDescription = description.getText().toString();
+    	//create an explicit intent.
+    	Intent searchIntent = new Intent(this, AdvancedSearchActivity.class);
     	
-    	//pops up a box when search is clicked
-    	Toast.makeText(this, strDescription, Toast.LENGTH_LONG).show();
-    	
+    	//start the activity
+    	startActivity(searchIntent);
     }
     
-    public int sum(int operand1, int operand2){
-    	int total;
-    	total = operand1 + operand2;
-    	return total;
-    }
+    
 }
