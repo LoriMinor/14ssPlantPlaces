@@ -7,5 +7,9 @@
     <string name="lblSearch">Search</string>
     <string name="lblGPSAPlant">GPS A Plant</string>
     <string name="lblDescription">Description of the plant</string>
+    <string name="lblSelectAPlant">Select a Plant</string>
+    <string name="lblLatitudeLabel">Latitude</string>
+    <string name="blank"></string>
+    <string name="lblLongitudeLabel">Longitude</string>
 
 </resources>
