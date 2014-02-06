@@ -27,4 +27,17 @@
         android:onClick="searchForPlants"
         android:text="@string/lblSearch" />
 
+    <Button
+        android:id="@+id/btnSelectPicutre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSelectAPictureClick"
+        android:text="@string/lblSelectPicture" />
+
+    <ImageView
+        android:id="@+id/imgPlantSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" />
+
 </LinearLayout>

@@ -11,5 +11,10 @@
     <string name="lblLatitudeLabel">Latitude</string>
     <string name="blank"></string>
     <string name="lblLongitudeLabel">Longitude</string>
+    <string name="lblPlantName">Plant Name</string>
+    <string name="lblTakePhoto">Take Photo</string>
+    <string name="lblSelectedPlant">"Selected Plant "</string>
+    <string name="lblSelectPicture">Select a Picture</string>
+    <string name="unable_to_open_image">Unable to open image</string>
 
 </resources>

@@ -9,7 +9,7 @@
     tools:context=".GPSAPlantActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/lblPlantName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblGPSAPlant" />
@@ -28,8 +28,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/lblPlantName"
+        android:layout_below="@+id/lblPlantName"
         android:text="@string/lblDescription" />
 
     <EditText
@@ -74,5 +74,33 @@
         android:layout_alignBottom="@+id/lblLongitudeLabel"
         android:layout_alignRight="@+id/lblLatitudeValue"
         android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/btnCaptureImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblLongitudeLabel"
+        android:layout_below="@+id/lblLongitudeValue"
+        android:layout_marginTop="29dp"
+        android:onClick="onTakePhotoClicked"
+        android:text="@string/lblTakePhoto" />
+
+    <ImageView
+        android:id="@+id/imgPlant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnCaptureImage"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtSelectedPlant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCaptureImage"
+        android:layout_below="@+id/lblLongitudeValue"
+        android:text="@string/lblSelectedPlant" />
 
 </RelativeLayout>
